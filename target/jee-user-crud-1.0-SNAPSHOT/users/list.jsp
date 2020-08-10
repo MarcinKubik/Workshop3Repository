@@ -71,7 +71,7 @@
                         <td>${user.userName}</td>
                         <td>${user.email}</td>
                         <td><a href="delete?id=${user.id}">Usuń</a></td>
-                        <td><a href="update?user=${user}">Edycja</a> </td>
+                        <td><a href="update?id=${user.id}">Edycja</a> </td>
                         <td><a href="show?id=${user.id}">Pokaż</a> </td>
                     </tr>
                 </c:forEach>

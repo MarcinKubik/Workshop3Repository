@@ -20,8 +20,6 @@ public class UserDelete extends HttpServlet {
         String idDelete = request.getParameter("id");
         UserDao userDao = new UserDao();
         userDao.delete(Integer.parseInt(idDelete));
-      /*  request.setAttribute("users", userDao.findAll());
-        getServletContext().getRequestDispatcher("/user/list").forward(request, response);*/
         response.sendRedirect("/user/list");
     }
 }

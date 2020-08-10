@@ -57,12 +57,16 @@
             <form method="post">
                 <p>Dodaj użytkownika</p>
                 <label>
+                    Id<br/>
+                    <input value="${user.id}" name="id" type="hidden">
+                </label><br/>
+                <label>
                     Nazwa<br/>
-                    <input  name="userName" type="text">
+                    <input value="${user.userName}" name="userName" type="text">
                 </label><br/>
                 <label>
                     Email<br/>
-                    <input name="email" type="email">
+                    <input value="${user.email}" name="email" type="email">
                 </label><br/>
                 <label>
                     Hasło<br/>
